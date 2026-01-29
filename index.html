@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MineZora - Hytale Server</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="manifest" href="assets/site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body class="home">
+
+  <nav class="navbar">
+    <div class="nav-logo">
+      <img src="assets/logos/minezora-circle.png" alt="MineZora Logo">
+    </div>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="vote.html">Vote</a></li>
+      <li><a href="https://discord.gg/FkzXMXcR3c">Discord</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      
+      <div class="logo-banner">
+        <img src="assets/logos/minezora-full.png" alt="MineZora">
+      </div>
+      
+
+      <h1>Forge Your Legend</h1>
+      <p>Step into the world of MineZora, built for architects and adventurers alike!</p>
+
+      <div class="ip-box">
+        <span id="server-ip">play.minezora.com</span>
+        <button onclick="copyIP()">Copy</button>
+      </div>
+      <span id="copy-msg"></span>
+
+      <div class="cta-buttons">
+        <a class="btn primary" href="#">Play Now</a>
+        <a class="btn secondary" href="https://discord.gg/FkzXMXcR3c">Join Discord</a>
+      </div>
+    </div>
+  </header>
+
+  <footer>
+    © 2026 MineZora — Not affiliated with Hypixel Studios
+  </footer>
+
+</body>
+</html>
