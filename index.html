@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MineZora - Hytale Server</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
@@ -13,17 +14,35 @@
 </head>
 <body class="home">
 
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main navigation">
     <div class="nav-logo">
       <img src="assets/logos/minezora-circle.png" alt="MineZora Logo">
     </div>
-    <ul>
+    <ul class="nav-links">
       <li><a class="active" href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="vote.html">Vote</a></li>
       <li><a href="https://discord.gg/FkzXMXcR3c">Discord</a></li>
     </ul>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="drawer">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+  <div class="drawer" id="drawer" role="dialog" aria-label="Navigation menu" aria-modal="true" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="nav-logo">
+        <img src="assets/logos/minezora-circle.png" alt="MineZora Logo">
+      </div>
+      <button type="button" class="drawer-close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="nav-links">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="vote.html">Vote</a></li>
+      <li><a href="https://discord.gg/FkzXMXcR3c">Discord</a></li>
+    </ul>
+  </div>
 
   <header class="hero">
     <div class="hero-overlay"></div>
